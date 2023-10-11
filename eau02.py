@@ -3,14 +3,16 @@ import sys
 # Get the arguments list
 args = sys.argv[1:]
 
+
 # Reverse the arguments list
 def reserve_args(args):
     args.reverse()
     reverse_args = "\n".join(args)
     return reverse_args
 
+
 # check if the arguments list is empty
-if args == []:
+if not args:
     print("No arguments given")
     sys.exit()
     
