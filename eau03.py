@@ -12,13 +12,11 @@ def create_fibo_list(valeur):
     if len(fibo_list) < 2:
         fibo_list.append(a)
         fibo_list.append(b)
-        print(fibo_list)
     for i in range(0, valeur - 1):
         a = fibo_list[-2]
         b = fibo_list[-1]
 
         fibo_list.append(a + b)
-        print(fibo_list)
     return fibo_list[valeur]
 
 
